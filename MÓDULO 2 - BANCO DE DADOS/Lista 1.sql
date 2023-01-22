@@ -72,7 +72,7 @@ INSERT INTO vendas VALUES
 	
 
 --EXERCICIOS:
--- 1) qual o valor total de cada uma das contas?
+-- 1) Qual o valor total de cada uma das contas?
 SELECT 
 	pedido_id,
 	sum (quantidade*valor_unidade) AS total_pedido
@@ -81,7 +81,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 
 
--- 2) qual produto mais vendido em quantidades? --- cerveja 48
+-- 2) Qual produto mais vendido em quantidades? --- cerveja 48
 SELECT 
 	nome_produto,
 	SUM(quantidade) AS quant_total
@@ -90,7 +90,7 @@ GROUP BY nome_produto
 ORDER BY quant_total DESC;
 
 
--- 3) qual produto que mais vendeu em valor? -- leite
+-- 3) Qual produto que mais vendeu em valor? -- leite
 SELECT
 	nome_produto,
 	SUM(quantidade) * valor_unidade AS valor_total
