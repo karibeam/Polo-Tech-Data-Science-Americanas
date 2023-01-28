@@ -1,5 +1,5 @@
 
---Criar uma tabela nomeada como vendas e nessa tabela deve conter:
+--Criar uma tabela nomeada como vendas e nessa tabela deve conter
 --	pedido_id integer
 --	produto_id integer
 --	nome_produto
